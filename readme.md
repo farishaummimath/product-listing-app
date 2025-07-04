@@ -21,24 +21,36 @@ A simple product listing page built with React and Redux Toolkit. It supports fi
 
 ## Folder Structure
 
-src/
-├── components/
-│ ├── ProductCard.jsx
-│ ├── ProductGrid.jsx
-│ ├── Tabs.jsx
-│ ├── Filters.jsx
-│ ├── Sort.jsx
-│ ├── Loader.jsx
-│ └── StickyHeader.jsx
-├── redux/
-│ └── productsSlice.js
-├── data/
-│ └── data.json
-├── assets/
-│ ├── empty-data.png
-│ └── empty-fav.png
-├── App.jsx
-└── index.js
+├── src/ # Source files
+│ ├── assets/ # Static assets like empty state illustrations
+│ │ ├── empty-data.png
+│ │ └── empty-fav.png
+│ │
+│ ├── components/ # Reusable UI components
+│ │ ├── Filters.jsx # Dropdown to filter by category
+│ │ ├── Loader.jsx # Loading spinner
+│ │ ├── PageWrapper.jsx # Global layout wrapper
+│ │ ├── ProductCard.jsx # UI for individual product card
+│ │ ├── ProductCardSkeleton.jsx# Skeleton loader for product card
+│ │ ├── ProductGrid.jsx # Responsive grid layout for products
+│ │ ├── Sort.jsx # Dropdown to sort by price
+│ │ ├── StickyHeader.jsx # Sticky filter/sort/tabs section
+│ │ └── Tabs.jsx # Tabs to toggle between all/favorites
+│ │
+│ ├── data/ # Local JSON product data
+│ │ └── data.json
+│ │
+│ ├── redux/ # Redux slice and store logic
+│ │ └── productsSlice.js
+│ │
+│ ├── App.jsx # Main application component
+│ └── index.js # Entry point rendering App to the DOM
+│
+├── .gitignore # Files and folders to ignore in Git
+├── index.html # HTML template
+├── package.json # Project metadata and dependencies
+├── package-lock.json # Exact dependency versions
+├── README.md # Project documentation
 
 ## Tech Stack
 
@@ -48,4 +60,17 @@ Redux Toolkit
 
 Styled-components
 
-React Testing Library
+## 🧾 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+        git clone https://github.com/your-username/your-repo-name.git
+        cd your-repo-name
+   ```
+2. **Install dependencies**
+   ```bash
+       npm install
+   ```
+3. **Open in browser**
+
+Visit: http://localhost:1234
