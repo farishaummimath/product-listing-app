@@ -20,7 +20,7 @@ A simple product listing page built with React and Redux Toolkit. It supports fi
 - Styled-components
 
 ## Folder Structure
-
+```bash
 ├── src/ # Source files
 │ ├── assets/ # Static assets like empty state illustrations
 │ │ ├── empty-data.png
@@ -51,7 +51,7 @@ A simple product listing page built with React and Redux Toolkit. It supports fi
 ├── package.json # Project metadata and dependencies
 ├── package-lock.json # Lock file for consistent installs
 └── README.md # Project documentation
-
+```
 ## Tech Stack
 
 React
