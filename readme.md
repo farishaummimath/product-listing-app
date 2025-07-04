@@ -22,10 +22,6 @@ A simple product listing page built with React and Redux Toolkit. It supports fi
 ## Folder Structure
 ```bash
 ├── src/ # Source files
-│ ├── assets/ # Static assets like empty state illustrations
-│ │ ├── empty-data.png
-│ │ └── empty-fav.png
-│ │
 │ ├── components/ # Reusable UI components
 │ │ ├── Filters.jsx # Dropdown to filter by category
 │ │ ├── Loader.jsx # Loading spinner
@@ -64,8 +60,8 @@ Styled-components
 
 1. **Clone the repository**
    ```bash
-        git clone https://github.com/your-username/your-repo-name.git
-        cd your-repo-name
+        git clone https://github.com/farishaummimath/product-listing-app
+        cd product-listing-app
    ```
 2. **Install dependencies**
    ```bash
