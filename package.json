@@ -4,8 +4,6 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir dist"
-}
-
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
