@@ -17,27 +17,27 @@ import ProductCardSkeleton from "./components/ProductCardSkeleton";
 
 import PageWrapper from "./components/PageWrapper";
 import styled from "styled-components";
+import Header from "./components/Header";
 const emptyFav = "https://placehold.co/600x400?text=No+Favorites";
 const emptyData = "https://placehold.co/600x400?text=No+Products+Found";
 const HeaderControls = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 100%;
-  padding: 0.5rem 1rem;
 
-  > * {
-    flex: 1 1 auto;
-    min-width: 180px;
+  select {
+    max-width: 200px;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 1rem;
+    align-items: stretch;
 
-    > * {
+    select {
       width: 100%;
     }
   }
@@ -121,19 +121,26 @@ const App = () => {
 
   return (
     <PageWrapper>
+      <Header />
       <StickyHeader>
         <HeaderControls>
-          <Tabs />
-          <Filters />
-          <Sort />
+          <div>
+            <Tabs />
+          </div>
+          <div>
+            <Filters />
+          </div>
+          <div>
+            <Sort />
+          </div>
         </HeaderControls>
       </StickyHeader>
       {finalList.length === 0 ? (
         <EmptyMessage>
-          <img
+          {/* <img
             src={activeTab === "favorites" ? emptyFav : emptyData}
             alt="Empty State"
-          />
+          /> */}
           {activeTab === "favorites"
             ? "No favorites added yet 💔"
             : "No products available."}
