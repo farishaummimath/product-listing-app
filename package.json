@@ -2,7 +2,10 @@
   "name": "ecommerce-plp",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel index.html --open"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist"
+}
+
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
